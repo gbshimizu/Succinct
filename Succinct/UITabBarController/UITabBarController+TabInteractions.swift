@@ -6,7 +6,7 @@ extension UITabBarController {
     ///
     /// - Parameter searchTitle: Text to compare to the title text of any UITabBarItem objects that are found.
     ///
-    @objc public func selectTab(withExactTitle searchTitle: String) {
+    public func selectTab(withExactTitle searchTitle: String) {
         if let tabBarItems = tabBar.items {
             for index in 0..<tabBarItems.count {
                 let tabBarItem = tabBarItems[index]
